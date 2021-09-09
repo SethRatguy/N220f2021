@@ -1,20 +1,21 @@
-var x;
-Red = 200
+var radius = 100
+var x = 0
+var speed = 2
+ function setup(){
 
-function setup(){
+     createCanvas(800, 600)
+     
+ }
+ 
+ function draw(){
+    background(0)
     
-createCanvas(400, 300)
-background(100)
-}
-function draw(){ 
-    fill(Red, 10, 75)
-    circle(mouseX ,mouseY, 50)
+     circle(x, 300, radius)
 
-    if(mouseX > 200){
-        Red = 1
-    }
-    if(mouseX < 200){
-        Red = 200
-    }
-}
+    x += speed
 
+    if (x >= 800){
+        x = 0
+    }
+
+ }
