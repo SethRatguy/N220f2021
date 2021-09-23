@@ -1,21 +1,23 @@
-var angle = 0
 
-function setup() {
+var N = 5
+function setup(){
 
-createCanvas(120, 120)
-
+    createCanvas(400,400)
 }
+function draw(){
+    for ( x = 1; x < 5; x++){
+        square (x * 60, 300, 60)
 
-function draw() {
+        for ( T = 1; T < 4; T++){
+            square (T * 60, 240, 60)
 
-translate(mouseX, mouseY)
-background(50)
-rotate(angle)
+            for ( R = 1; R <3; R++){
+                square (R * 60, 180, 60)
 
-circle(-25, 20, 5)
-
-circle(25, -20, 5)
-
-angle += 0.1
-
+                for ( E = 1; E < 2; E++){
+                    square (E * 60, 120, 60)
+                }
+            }
+        }
+    }
 }
