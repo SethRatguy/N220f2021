@@ -10,28 +10,28 @@ Nam.style.backgroundColor = "#8A7BE8"
 Nam.style.width = "50px"
 Nam.style.height = "50px"
 Nam.style.float = "left"
-Nam.innerHTML = pet.name
+Nam.innerHTML = "Name: " + pet.name
 
 let Ag = document.getElementById("age")
 Ag.style.backgroundColor = "#8A7BE8"
 Ag.style.width = "50px"
 Ag.style.height = "50px"
 Ag.style.float = "left"
-Ag.innerHTML = pet.age
+Ag.innerHTML = "Age: " +pet.age
 
 let Hap = document.getElementById("happiness")
 Hap.style.backgroundColor = "#8A7BE8"
 Hap.style.width = "50px"
 Hap.style.height = "50px"
-Hap.style.float = "left"
-Hap.innerHTML = pet.happiness
+Hap.style.float = "left" 
+Hap.innerHTML = "Happiness: " + pet.happiness
 
 let Energ = document.getElementById("energy")
 Energ.style.backgroundColor = "#8A7BE8"
 Energ.style.width = "50px"
 Energ.style.height = "50px"
 Energ.style.float = "left"
-Energ.innerHTML = pet.energy
+Energ.innerHTML = "Energy: " + pet.energy
 
 let Animal = document.getElementById("animal")
 Animal.style.backgroundColor = "#8A7BE8"

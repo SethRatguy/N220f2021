@@ -5,15 +5,16 @@ let cir = {
 }
 
 function setup(){
-    createCanvas(500)
+    createCanvas(500,500)
     background(60)
 }
 
 function draw(){
 translate(250,250)
-    for (i=0; i < 5; i++){
+    fill("red")
         circle(cir.x, cir.y, cir.size )
+        cir.size ++
         
-    }
+    
 
 }
