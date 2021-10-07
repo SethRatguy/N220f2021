@@ -1,40 +1,40 @@
 let pet = {
-    name = "Rosie",
-    age = 3,
-    happiness = 0,
-    energy= 0,
+    name : "Rosie",
+    age : 3,
+    happiness : 0,
+    energy: 0,
 }
 
 let Nam = document.getElementById("name")
-Nam.style.backgroundColor = "#4B4C6E"
+Nam.style.backgroundColor = "#8A7BE8"
 Nam.style.width = "50px"
 Nam.style.height = "50px"
 Nam.style.float = "left"
 Nam.innerHTML = pet.name
 
 let Ag = document.getElementById("age")
-Ag.style.backgroundColor = "#4B4C6E"
+Ag.style.backgroundColor = "#8A7BE8"
 Ag.style.width = "50px"
 Ag.style.height = "50px"
 Ag.style.float = "left"
 Ag.innerHTML = pet.age
 
 let Hap = document.getElementById("happiness")
-Hap.style.backgroundColor = "#4B4C6E"
+Hap.style.backgroundColor = "#8A7BE8"
 Hap.style.width = "50px"
 Hap.style.height = "50px"
 Hap.style.float = "left"
 Hap.innerHTML = pet.happiness
 
 let Energ = document.getElementById("energy")
-Energ.style.backgroundColor = "#4B4C6E"
+Energ.style.backgroundColor = "#8A7BE8"
 Energ.style.width = "50px"
 Energ.style.height = "50px"
 Energ.style.float = "left"
 Energ.innerHTML = pet.energy
 
 let Animal = document.getElementById("animal")
-Animal.style.backgroundColor = "#4B4C6E"
+Animal.style.backgroundColor = "#8A7BE8"
 Animal.style.width = "50px"
 Animal.style.height = "50px"
 

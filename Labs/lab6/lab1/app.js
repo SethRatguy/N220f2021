@@ -18,13 +18,13 @@ function setup(){
     createCanvas(500,500)
 }
 function draw(){
-
+    background(100)
     
     
-    for (i = 0; i < 12; i++){
-        background(100)
+    for (i = 0; i < animatedCircle.length; i++){
+        
         circle(animatedCircle[i].x ,animatedCircle[i].y ,animatedCircle[i].radius )
-
+        animatedCircle[i].x++
         
     }
 }
