@@ -11,6 +11,8 @@ Squ.style.backgroundColor = "#F000D8"
 Squ.style.width =  square.length +"px"
 Squ.style.height = square.height + "px"
 
-
+function grow(){
+    
+}
 
 
