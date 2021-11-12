@@ -24,5 +24,6 @@ function click2(){
     }
     txt.value = "" 
     console.log("this many bad words " + x)
+    x = 0
 }
 
