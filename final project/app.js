@@ -3,22 +3,19 @@ on the screen this will need event.target stuff
 first get them to be clickable.
 */
 function reload() {
-    location.reload();
+    location.reload()
 }
-//loop to create all the divs
 
-
+// array to store the information
 let compare = []
-
+//loop to create all the divs
 for (i = 0; i < 16; i++) {
     let newDiv = document.createElement("div")
     newDiv.style.width = "50px"
     newDiv.style.height = "50px"
-    
-    
     newDiv.style.backgroundColor = "#c9c9c9"
 
-    //setting an attribute to two of each so some of them
+    //setting an attribute to two of each, so some of them
     // match eachother and can be compared
     if ((i == 0) || (i == 9)) {
         newDiv.setAttribute("data-value", "1")
@@ -44,7 +41,7 @@ for (i = 0; i < 16; i++) {
     // MAKE THEM CLICKABLE 
     newDiv.addEventListener("click", displayValue)
 }
-//define what the click does to the target
+//define what the click does to the target div
 function displayValue(event) {
     event.target.innerHTML = event.target.dataset.value
     setTimeout(function () {
@@ -52,21 +49,15 @@ function displayValue(event) {
     }, 2000)
 
     // let array = [ event.target.dataset.value , event.target.dataset.value ]
-    //comparing the clicked ones
-
-
+    //put the clicked one in an array to compare the clicked ones
     compare.push(event.target)
 
-
-
     if ((compare.length == 2) && (compare[0].dataset.value == compare[1].dataset.value)) {
-
+        //"remove" the cards from the game
         compare[0].style.opacity = 0
         compare[1].style.opacity = 0
         // compare[0].remove();
         // compare[1].remove();
-
-
         compare = []
     } else if ((compare.length == 2) && (compare[0] !== compare[1])) {
         compare = []
